@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1b2a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+nav {
+    background-color: #0a1628;
+    border-bottom: 2px solid #00bcd4;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #00bcd4;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #ffd700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: #b0bec5;
+    text-decoration: none;
+    padding: 8px 14px;
+}
+
+nav ul li a:hover {
+    background-color: #1a2744;
+    color: #00bcd4;
+}
+.baner {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #111e30;
+    animation: pojawienie 0.8s ease;
+}
+
+.baner h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.baner span {
+    color: #00bcd4;
+}
+
+.baner p {
+    font-size: 18px;
+    color: #90a4ae;
+    margin-bottom: 30px;
+}
+
+.przycisk {
+    background-color: #00bcd4;
+    color: #0d1b2a;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.przycisk:hover {
+    background-color: #4dd0e1;
+}
+.funkcje {
+    padding: 60px 20px;
+}
+
+.funkcje h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.kafelki {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.karta {
+    background-color: #1a2744;
+    border: 1px solid #1e3a5f;
+    padding: 25px;
+    flex: 1 1 280px;
+}
+
+.karta h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.karta p {
+    color: #90a4ae;
+    font-size: 15px;
+}
+footer {
+    background-color: #0a1628;
+    border-top: 1px solid #1e2d40;
+    padding: 30px 20px;
+    text-align: center;
+    color: #78909c;
+    font-size: 14px;
+    line-height: 1.8;
+}
+@keyframes pojawienie {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .baner h1 {
+        font-size: 28px;
+    }
+
+    .kafelki {
+        flex-direction: column;
+    }
+}
